@@ -11,7 +11,7 @@
     "copy": "yarn ei copy",
     "preview": "yarn ei preview --icons lib/icons --output docs",
     "build": "father-build",
-    "prepublishOnly": "npm run clean && npm run g && npm publish"
+    "prepublishOnly": "npm run clean && npm run g && npm run build"
   },
   "files": [
     "es",
