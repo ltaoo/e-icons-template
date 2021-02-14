@@ -1,0 +1,36 @@
+{
+  "name": "e-icons-template",
+  "version": "1.0.0",
+  "description": "use svg icon like @ant-design/icons",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "yarn ei clean",
+    "g": "yarn ei gen all --svg ./svg --output src",
+    "copy": "yarn ei copy",
+    "preview": "yarn ei preview --icons lib/icons --output docs",
+    "build": "father-build",
+    "prepublishOnly": "npm run clean && npm run g && npm publish"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^17.0.1",
+    "e-icons": "^0.1.0",
+    "father-build": "^1.19.1"
+  },
+  "peerDependencies": {
+    "classnames": "^2.2.6",
+    "react": "^17.0.1"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^6.0.0"
+  }
+}
