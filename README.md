@@ -3,13 +3,11 @@
 快速将自己的 `svg icon` 变成和 `@ant-design/icons` 一样的 `npm` 包。
 
 ## Publish
-将自己的 `svg icon` 根据类型（`filled`、`outlined`）放入根目录的 `svg` 文件夹后，使用命令
+将自己的 `svg icon` 根据类型（`filled`、`outlined`）放入根目录的 `svg` 文件夹后即可发布，发布前会自动执行一系列命令，无需关注太多命令。
 
 ```bash
-yarn g
+npm publish
 ```
-
-再执行 `yarn copy`，然后 `yarn build` 后即可发布。
 
 ## Usage
 
