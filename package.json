@@ -12,7 +12,8 @@
     "preview": "yarn ei preview --icons lib/icons --output docs",
     "build": "father-build",
     "peer": "yarn add react classnames --peer",
-    "prepublishOnly": "yarn clean && yarn g && yarn copy && yarn peer && yarn build"
+    "init": "yarn g && yarn copy && yarn peer",
+    "prepublishOnly": "yarn clean && yarn g && yarn build"
   },
   "files": [
     "es",
