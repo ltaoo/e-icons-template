@@ -1,17 +1,17 @@
 {
-  "name": "e-icons-template",
+  "name": "e-icons-react-template",
   "version": "1.0.0",
-  "description": "use svg icon like @ant-design/icons",
+  "description": "Use svg icon like @ant-design/icons",
   "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
+    "postinstall": "yarn add react classnames --peer --ignore-script",
     "clean": "yarn ei clean",
     "g": "yarn ei gen all --svg ./svg --output src",
     "preview": "yarn ei preview --icons lib/icons --output docs",
     "build": "father-build",
-    "peer": "yarn add react classnames --peer",
-    "prepublishOnly": "yarn clean && yarn g"
+    "prepublishOnly": "yarn clean && yarn g && yarn build"
   },
   "files": [
     "es",
