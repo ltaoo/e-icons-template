@@ -1,5 +1,5 @@
 {
-  "name": "e-icons-react-template",
+  "name": "easy-icons-react",
   "version": "1.0.0",
   "description": "Use svg icon like @ant-design/icons",
   "main": "lib/index.js",

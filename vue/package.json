@@ -1,0 +1,23 @@
+{
+  "name": "easy-icons-vue",
+  "description": "Use svg icons like ant-design/icons.",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "yarn add vue --peer --ignore-script",
+    "clean": "yarn ei clean",
+    "g": "yarn ei gen all --svg ./svg --output src",
+    "preview": "yarn ei preview --icons lib/icons --output docs",
+    "build": "father-build",
+    "prepublishOnly": "yarn clean && yarn g && yarn build"
+  },
+  "devDependencies": {
+    "easy-icons": "^0.1.0",
+    "father-build": "^1.19.1"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^6.0.0"
+  }
+}
