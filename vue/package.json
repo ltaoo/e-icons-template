@@ -6,7 +6,7 @@
   "module": "./es/index.js",
   "license": "ISC",
   "scripts": {
-    "postinstall": "yarn add vue --peer --ignore-script",
+    "postinstall": "yarn add vue --peer --ignore-scripts",
     "clean": "yarn ei clean",
     "g": "yarn ei gen all --svg ./svg --output src",
     "preview": "yarn ei preview --icons lib/icons --output docs",
