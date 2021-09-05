@@ -1,0 +1,28 @@
+{
+  "name": "easy-icons-monorepo-template",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Use svg icon like @ant-design/icons",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "father-build",
+    "prepublishOnly": "yarn clean && yarn g && yarn build"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "easy-icons": "^0.1.0",
+    "father-build": "^1.19.1",
+    "lerna": "^4.0.0"
+  }
+}

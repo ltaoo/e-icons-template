@@ -1,0 +1,19 @@
+{
+  "name": "@organize/asn",
+  "version": "0.1.0",
+  "description": "a asn library.",
+  "keywords": [
+    "icons"
+  ],
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "father-build",
+    "clean": "rimraf es lib"
+  }
+}

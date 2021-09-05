@@ -1,0 +1,34 @@
+{
+  "name": "@organize/icons",
+  "version": "0.1.0",
+  "description": "a icons library.",
+  "keywords": [
+    "icons"
+  ],
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "publishConfig": {
+    "registry": "http://npm.wpt.la/"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "father-build",
+    "clean": "rimraf es lib"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/react": "^17.0.19"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^5.0.0",
+    "classnames": "^2.2.6",
+    "insert-css": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0"
+  }
+}
